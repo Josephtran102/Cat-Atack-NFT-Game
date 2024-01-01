@@ -9,7 +9,7 @@ const ClaimKitten: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center w-full space-y-12">
-      <h1 className="font-bold sm:text-6xl text-4xl leading-none text-center tracking-tight">
+      <h1 className="font-bold sm:text-6xl text-4xl leading-none text-center tracking-tight flex flex-col items-center">
         <span
           className="!bg-clip-text text-transparent"
           style={{
@@ -18,8 +18,8 @@ const ClaimKitten: React.FC = () => {
           }}
         >
           Claim your kitten
-        </span>{" "}
-        to get started
+        </span>
+        <span className="text-center">to get started</span>
       </h1>
       <div className="mx-auto">
         <Image
