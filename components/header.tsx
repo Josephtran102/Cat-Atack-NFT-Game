@@ -17,8 +17,8 @@ const Header: React.FC = () => {
             className="md:hidden"
             width={48}
             height={48}
-            src="/thirdweb.svg"
-            alt="thirdweb"
+            src="/logo.png"
+            alt="Joseph"
           />
           <Image
             className="hidden md:block"
