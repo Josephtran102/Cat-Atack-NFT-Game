@@ -18,6 +18,7 @@ import Cats from "../components/cats";
 import Footer from "../components/footer";
 import { EventContext } from "../contexts/event-context";
 import { Spinner } from "../components/Spinner/Spinner";
+import Head from 'next/head';
 
 const Home: NextPage = () => {
   // contract data
@@ -63,6 +64,9 @@ const Home: NextPage = () => {
           isLoading: eventsQuery.isLoading,
         }}
       >
+        <Head> {/* Thêm thẻ Head từ 'next/head' */}
+          <link rel="icon" href="/JOSE_icon.png" /> {/* Thay đổi đường dẫn và tên file favicon nếu cần */}
+        </Head>
         <Header />
         <div className="max-w-3xl flex flex-col items-center mx-auto py-8 px-4">
           {connectionStatus === "disconnected" && <Welcome />}
